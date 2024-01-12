@@ -54,7 +54,10 @@ const Home = () => {
   const uploadToS3 = async () => {
     if (recordedChunks.current.length > 0) {
       const blob = new Blob(recordedChunks.current, { type: 'video/webm' });
-      const fileName = 'recorded-video.webm';
+  
+      // Use a timestamp to make the file name unique
+      const timestamp = new Date().toISOString().replace(/[-T:]/g, '').split('.')[0];
+      const fileName = `video-${timestamp}.webm`;
 
       const params = {
         Bucket: 'reson-videos',
