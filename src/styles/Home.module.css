@@ -227,3 +227,52 @@
     transform: rotate(0deg);
   }
 }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  color: #333;
+}
+
+.video-container {
+  margin-top: 20px;
+}
+
+.video {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.start-button {
+  background-color: #3498db;
+}
+
+.stop-button {
+  background-color: #e74c3c;
+}
+
+.download-button {
+  background-color: #2ecc71;
+}
